@@ -1,8 +1,8 @@
 
-# Your name:
-# Your student id:
-# Your email:
-# List who you have worked with on this project:
+# Your name: Angela Cheong
+# Your student id: 80383204
+# Your email: acheong@umich.edu
+# List who you have worked with on this project: Adena Cartsonis and Allison He
 
 import unittest
 import sqlite3
