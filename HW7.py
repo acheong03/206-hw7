@@ -102,7 +102,13 @@ def nationality_search(countries, cur, conn):
 
 
 def birthyear_nationality_search(age, country, cur, conn):
-    pass
+    list = []
+    year = 2023 - age
+    cur.execute("SELECT name, birthyear FROM Players WHERE Players.nationality = ? AND birthyear < ?", (country, year,))
+    for row in cur.fetchall(): 
+        list.append((row[0], country, row[1])) #... in my dreams 
+    conn.commit()
+    return list
 
 ## [TASK 4]: 15 points
 # finish the function position_birth_search
